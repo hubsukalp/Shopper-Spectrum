@@ -127,5 +127,3 @@ Customer Analytics | Machine Learning | Data Science
 ```
 
 ---
-Just ask 🙌
-```
