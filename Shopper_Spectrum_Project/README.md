@@ -125,5 +125,3 @@ B.Tech – Computer Science & Engineering
 Customer Analytics | Machine Learning | Data Science
 
 ```
-
----
