@@ -1,119 +1,141 @@
-# Shopper Spectrum Project
+# 🛒 Shopper Spectrum Project
 
 ## 📌 Project Overview
 The **Shopper Spectrum Project** is an end-to-end data science application that analyzes customer purchasing behavior using **RFM (Recency, Frequency, Monetary) analysis** and **KMeans clustering** for customer segmentation.  
-Additionally, an **item-based collaborative filtering recommendation system** suggests products frequently purchased together using cosine similarity.
 
-A **Streamlit web application** is included to demonstrate real-time customer segmentation and product recommendations.
+In addition, an **item-based collaborative filtering recommendation system** is implemented to recommend products that are frequently purchased together using **cosine similarity**.
+
+A **Streamlit-based web application** is included to demonstrate real-time customer segmentation and product recommendations.
 
 ---
 
 ## 🎯 Objectives
-- Segment customers into meaningful groups using RFM analysis  
-- Identify high-value and at-risk customers  
-- Recommend similar products based on purchase behavior  
-- Build a deployable, interactive Streamlit application  
+- Segment customers into meaningful groups using RFM analysis
+- Identify high-value and at-risk customers
+- Recommend similar products based on purchase behavior
+- Build a deployable, interactive Streamlit application
 
 ---
 
 ## 🧠 Methodology
 
-1. **Data Cleaning & Preprocessing**
-   - Removed cancelled transactions  
-   - Handled missing customer and product details  
-   - Filtered invalid quantities and prices  
+### 1️⃣ Data Cleaning & Preprocessing
+- Removed cancelled transactions
+- Handled missing customer and product descriptions
+- Filtered invalid quantities and prices
 
-2. **Exploratory Data Analysis (EDA)**
-   - Country-wise sales analysis  
-   - Product-level sales trends  
-   - Monthly revenue patterns  
-   - Distribution of transaction monetary values  
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Country-wise sales analysis
+- Product-level sales trends
+- Monthly revenue patterns
+- Transaction monetary value distribution
 
-3. **RFM Feature Engineering**
-   - Recency: Days since last purchase  
-   - Frequency: Number of purchases  
-   - Monetary: Total spend per customer  
+### 3️⃣ RFM Feature Engineering
+- **Recency**: Days since last purchase  
+- **Frequency**: Number of transactions  
+- **Monetary**: Total spending per customer  
 
-4. **Customer Segmentation**
-   - Standardized RFM features  
-   - Applied KMeans clustering  
-   - Optimal clusters selected using Elbow and Silhouette analysis  
-   - Resulting segments:
-     - High-Value  
-     - Regular  
-     - Occasional  
-     - At-Risk  
+### 4️⃣ Customer Segmentation
+- Standardized RFM features
+- Applied KMeans clustering
+- Optimal number of clusters selected using Elbow Method and Silhouette Score
+- Final customer segments:
+  - High-Value
+  - Regular
+  - Occasional
+  - At-Risk
 
-5. **Product Recommendation System**
-   - Item-based collaborative filtering using cosine similarity  
-   - Top-N product recommendations  
+### 5️⃣ Product Recommendation System
+- Item-based collaborative filtering
+- Cosine similarity for product-product similarity
+- Top-N product recommendations
 
-6. **Model Deployment**
-   - Models saved using `joblib`  
-   - Streamlit app for interactive use  
+### 6️⃣ Model Deployment
+- Models saved using `joblib`
+- Streamlit app for real-time interaction
 
 ---
 
 ## 🧪 Technologies Used
-- Python  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
-- Scikit-learn  
-- Streamlit  
-- Joblib  
-
----
-
-## 📂 Project Structure
-```
-
-Shopper_Spectrum_Project/
-│
-├── app.py
-├── shopper_spectrum.ipynb
-├── models/
-│   ├── kmeans_model.pkl
-│   └── scaler.pkl
-├── requirements.txt
-├── README.md
-└── .gitignore
-
-````
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- SciPy
+- Streamlit
+- Joblib
 
 ---
 
 ## 📊 Dataset
-The project uses the **Online Retail Dataset** containing transactional purchase records.
 
-🔗 Dataset link:  
-https://drive.google.com/file/d/1rzRwxm_CJxcRzfoo9Ix37A2JTlMummY-/view?usp=sharing
+The project uses the **Online Retail Dataset**, which contains transactional purchase records.
 
-> Due to GitHub file size and licensing constraints, the dataset is not included in this repository.
+🔗 **Dataset Download Link:**  
+https://drive.google.com/file/d/1rzRwxm_CJxcRzfoo9Ix37A2JTlMummY-/view
 
-To run the project locally, download the dataset from the link above and place it in the following path:
+> ⚠️ Due to GitHub file size limitations, the dataset is **not included** in this repository.
 
+### Dataset Placement
+After downloading, place the dataset at the following path:
 ```text
-data/online_retail.csv
+Shopper_Spectrum_Project/data/online_retail.csv
 ````
 
 ---
 
-## How to Run
-From the root directory:
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/hubsukalp/Shopper-Spectrum.git
+cd Shopper-Spectrum
+```
+
+### 2️⃣ Navigate to Project Folder
 
 ```bash
 cd Shopper_Spectrum_Project
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+### 4️⃣ Run Streamlit Application
+
+```bash
 streamlit run app.py
+```
+
+---
+
+## 📁 Repository Structure
+
+```text
+Shopper-Spectrum/
+└── Shopper_Spectrum_Project/
+    ├── app.py                  # Streamlit application
+    ├── shopper_spectrum.ipynb  # Complete analysis notebook
+    ├── models/
+    │   ├── kmeans_model.pkl
+    │   └── scaler.pkl
+    ├── data/                   # Dataset folder (not included)
+    ├── requirements.txt
+    └── README.md
+```
 
 ---
 
 ## 📈 Key Results
 
-* Identified four distinct customer segments
-* High-value customers contribute disproportionately to overall revenue
-* Product recommendations validated using cosine similarity
-* Streamlit app enables real-time segmentation and recommendations
+* Identified 4 distinct customer segments
+* Found that a small group of customers contributes disproportionately to revenue
+* Generated meaningful product recommendations using cosine similarity
+* Built an interactive Streamlit application for real-time predictions
 
 ---
 
@@ -125,22 +147,17 @@ An explanatory video demonstrating the complete workflow and Streamlit applicati
 
 ## 🚀 Future Scope
 
-* Incorporate customer demographic data
-* Explore advanced recommendation techniques such as matrix factorization and deep learning
+* Incorporate customer demographic information
+* Explore advanced recommendation techniques (matrix factorization, deep learning)
 * Deploy the application on cloud platforms
 * Add business-focused dashboards and analytics
+* Enable personalized recommendation history
 
 ---
 
 ## 👤 Author
 
-**Sukalp Warhekar**  
-B.Tech – Computer Science & Engineering  
-
-**Interests & Skills:**  
-- Customer Analytics  
-- Machine Learning  
-- Data Science  
-
-
+**Sukalp Warhekar**
+B.Tech – Computer Science & Engineering
+Customer Analytics | Machine Learning | Data Science
 
