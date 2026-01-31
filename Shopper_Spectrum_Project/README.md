@@ -123,5 +123,3 @@ streamlit run app.py
 **Sukalp Warhekar**
 B.Tech – Computer Science & Engineering
 Customer Analytics | Machine Learning | Data Science
-
-```
