@@ -98,19 +98,13 @@ data/online_retail.csv
 
 ---
 
-## ▶️ How to Run the Project
-
-### Install dependencies
+## How to Run
+From the root directory:
 
 ```bash
+cd Shopper_Spectrum_Project
 pip install -r requirements.txt
-```
-
-### Run Streamlit app
-
-```bash
 streamlit run app.py
-```
 
 ---
 
@@ -147,5 +141,6 @@ B.Tech – Computer Science & Engineering
 - Customer Analytics  
 - Machine Learning  
 - Data Science  
+
 
 
