@@ -162,7 +162,6 @@ B.Tech – Computer Science & Engineering
 **Interests & Skills:**  
 - Customer Analytics  
 - Machine Learning  
-- Data Science  
+- Data Science 
 
----
 
