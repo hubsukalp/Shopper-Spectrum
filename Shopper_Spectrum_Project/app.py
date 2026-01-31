@@ -18,8 +18,10 @@ DATA_PATH = "data/online_retail.csv"
 
 if not os.path.exists(DATA_PATH):
     st.error(
-        "Dataset not found. Please download 'online_retail.csv' "
-        "and place it inside the data/ folder."
+        "Dataset not found.\n\n"
+        "Please download 'online_retail.csv' from the dataset link "
+        "mentioned in the README and place it inside:\n\n"
+        "Shopper_Spectrum_Project/data/"
     )
     st.stop()
 
@@ -80,6 +82,7 @@ def recommend_products(product_name, similarity_df, top_n=5):
 # ==============================
 
 st.title("🛒 Shopper Spectrum")
+
 st.caption(
     "Customer Segmentation & Product Recommendation System "
     "using RFM Analysis and Collaborative Filtering"
