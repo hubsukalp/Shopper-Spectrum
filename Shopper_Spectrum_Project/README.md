@@ -156,10 +156,13 @@ An explanatory video demonstrating the full workflow and Streamlit application w
 
 ## 👤 Author
 
-**Sukalp Warhekar**
-B.Tech – Computer Science & Engineering
-Customer Analytics | Machine Learning | Data Science
+**Sukalp Warhekar**  
+B.Tech – Computer Science & Engineering  
 
-````
+**Interests & Skills:**  
+- Customer Analytics  
+- Machine Learning  
+- Data Science  
 
 ---
+
