@@ -1,4 +1,3 @@
-```md
 # Shopper Spectrum Project
 
 ## 📌 Project Overview
@@ -144,6 +143,5 @@ An explanatory video demonstrating the complete workflow and Streamlit applicati
 **Sukalp Warhekar**
 B.Tech – Computer Science & Engineering
 Customer Analytics | Machine Learning | Data Science
+```
 
-```
-```
