@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+data/*.csv
+__pycache__/
+.streamlit/
+*.log
+.env
+*.mp4
